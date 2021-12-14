@@ -20,15 +20,26 @@
       <a class="navbar-brand ms-3" href="#">
         <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
           loading="lazy">
-        <span class="ms-2">Vendr</span>
+        <span class="ms-2">Taylor's Vendr Machine</span>
       </a>
     </nav>
   </header>
   <main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-
+        <div class="col-6 pt-2 text-center">
+          <div class="card rouded" style="width: 20rem;">
+            <div class="col-12 card header text-dark text-center align-items-center">
+              <h2>Snacks</h2>
+              <button class="btn btn-primary col-5 mb-2" onclick="buySnack()">Purchase</button>
+              <div>Snacks: <span class="col-5" id="snack"></span></div>
+              <div>Snack Price: $ <span class="col-5" id="snackPrice"></span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 pt-2 text-center">
+          <h6 class="text-dark">Money: = $ <span id="money"> </span></h6>
+          <button class="btn btn-primary col-5 mb-2" onclick="app.vendingController.addMoney()">Add Money</button>
         </div>
       </div>
     </div>
